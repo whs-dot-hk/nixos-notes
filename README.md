@@ -18,3 +18,10 @@ parted /dev/vda -- mkpart ESP fat32 1MiB 512MiB
 parted /dev/vda -- set 3 esp on
 ```
 
+![](nixos-mkfs-ext4.png "")
+![](nixos-formatting.png "")
+```sh
+mkfs.ext4 -L nixos /dev/vda1
+mkswap -L swap /dev/vda2
+mkfs.fat -F 32 -n boot /dev/vda3
+```
