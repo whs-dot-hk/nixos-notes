@@ -4,7 +4,7 @@ https://channels.nixos.org/nixos-21.11/latest-nixos-gnome-x86_64-linux.iso
 ![](nixos-download.png "")
 
 # Install NixOS
-![](nixos-install.png "")
+![](nixos-welcome.png "")
 ![](nixos-sudo-i.png "")
 ![](nixos-parted.png "")
 ![](nixos-parted-all.png "")
@@ -32,3 +32,7 @@ mkdir -p /mnt/boot
 mount /dev/disk/by-label/boot /mnt/boot
 swapon /dev/vda2
 ```
+
+![](nixos-generate-config.png "")
+![](nixos-edit-config.png "")
+![](nixos-install.png "")
