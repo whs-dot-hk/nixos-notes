@@ -25,3 +25,10 @@ mkfs.ext4 -L nixos /dev/vda1
 mkswap -L swap /dev/vda2
 mkfs.fat -F 32 -n boot /dev/vda3
 ```
+
+![](nixos-mount.png "")
+```sh
+mkdir -p /mnt/boot
+mount /dev/disk/by-label/boot /mnt/boot
+swapon /dev/vda2
+```
